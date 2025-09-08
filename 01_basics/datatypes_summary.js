@@ -32,6 +32,35 @@ const Heros = ["saktiman", "naagraj", "doga"];   // use [] to represent Arrays
 const myFunction = function (){console.log("helo world");
 }
 
+console.log(typeof myFunction);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory Types
+
+// stack  (primitive)
+// heap   (non-primitive)
+
+// stack example
+let youtubename = "distoo";
+let anothername = youtubename;
+ anothername = "vivek";
+console.log(anothername);
+console.log(youtubename);
+
+// heap example
+
+let userOne ={
+    Email: "vivek@google.com",
+    upi: "pay@ybl"
+};
+let userTwo = userOne
+userTwo.Email = "google@gmail.com"
+console.log(userOne.Email);
+console.log(userTwo.Email);
+
+
 
 
 
