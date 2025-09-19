@@ -31,10 +31,13 @@ console.log(`${newDate.getDay()}and the time is ${newDate.getTime()}`);
 
 console.log(newDate.toLocaleString('default', {
     weekday: "long",
-    timeStyle:"medium"
+    year:"numeric",
     
 }));
 
-
+console.log(newDate.getTime('default',{
+    myTimeStamp:"long",
+    
+}));
 
 
