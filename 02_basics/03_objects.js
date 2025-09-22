@@ -22,7 +22,13 @@ jsuser.email = "vivek@youtube.com";
 jsuser.email = "vivek@microsoft.com"
 // console.log(jsuser);
 
-jsuser.greeting = Function(){
-    console.log("hello JS user")
+jsuser.greeting = function(){
+    console.log("Hello JS user");
 }
-console.log(jsuser);
+jsuser.greetingTwo = function(){
+    console.log(`Hello JS User, ${this.name}`);
+}
+
+
+console.log(jsuser.greeting());
+console.log(jsuser.greetingTwo());
