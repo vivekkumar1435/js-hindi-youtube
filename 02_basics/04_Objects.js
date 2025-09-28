@@ -44,7 +44,12 @@ const users = [
     }
 ]
 
-console.log(users[1].email);
+// console.log(users[1].email);
 
-
+console.log(tinderUser);                        //              { Id: '123abc', name: 'sammy', isLoggedIn: false }
+console.log(Object.keys(tinderUser));           // use keys     [ 'Id', 'name', 'isLoggedIn' ]
+console.log(Object.keys(tinderUser).length);    // use .length  3
+console.log(Object.values(tinderUser));         // use values   [ '123abc', 'sammy', false ]
+console.log(Object.entries(tinderUser));        // use entries  [ [ 'Id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
+console.log(tinderUser.hasOwnProperty("isLoggedIn"));   // use hasOwnProperty to find object is exist or not.
 
