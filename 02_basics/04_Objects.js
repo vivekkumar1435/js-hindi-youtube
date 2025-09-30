@@ -53,3 +53,31 @@ console.log(Object.values(tinderUser));         // use values   [ '123abc', 'sam
 console.log(Object.entries(tinderUser));        // use entries  [ [ 'Id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));   // use hasOwnProperty to find object is exist or not.
 
+//=================== Destructure ==================
+
+const course = {
+    coursename: "js in hindi",
+    price:     "999",
+    courseInstructor: "Hitesh"
+
+};
+
+// course.coourseInstructor
+
+const {courseInstructor: inst} = course
+console.log(inst);
+
+// ========= API ==========
+
+// {
+//     "name": "vivek",
+//     "gender":"male",
+//     "age": 19
+
+// }
+ 
+// [
+//     {},
+//     {},
+//     {},
+// ]
