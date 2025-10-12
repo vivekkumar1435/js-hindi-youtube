@@ -50,12 +50,14 @@ if (balance < 500) {
 
 const userLoggedIn = true 
 const debitCard = true 
+
 if (userLoggedIn && debitCard & 2 == 2)
 {
     console.log( "allow to buy course")
 };
 
 //    uses of || (or)
+
 const loggedInFromGoogle =  false
 const loggedInfromEmail = true
 if (loggedInFromGoogle || loggedInfromEmail){
